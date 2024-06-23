@@ -1,0 +1,19 @@
+/* #heading{
+    text-align: center;
+    display: flex;
+     align-items: center;
+     justify-content: center;
+} */
+.encyclo-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+#encyclo-heading{
+    margin: 5 auto;
+    /* letter-spacing: 5px; */
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}

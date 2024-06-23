@@ -1,0 +1,72 @@
+/* .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+} */
+
+.encyclo {
+  /* border: 1px solid black; */
+  flex-basis: 22%;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: #fff;
+  border-radius: 5%;
+  position: relative; /* Added to position the hover content */
+}
+
+.card {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.image {
+  /* background-color: #fff455; */
+  border-radius: 5%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.encyclo-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  max-height: 300px;
+}
+
+.hover-content {
+  display: none; /* Hide by default */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: white; /* White text */
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 5%; /* Match the border radius of the card */
+}
+
+.card:hover .hover-content {
+  display: flex; /* Show on hover */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hover-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hover-description {
+  font-size: 16px;
+}
